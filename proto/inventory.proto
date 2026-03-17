@@ -18,15 +18,12 @@ message ProductResponse {
 message ProductsResponse {
     repeated ProductResponse products = 1;
 }
-<<<<<<< HEAD
 
 message Payload {
     int32 id = 1;
 }
 
-=======
 service InventoryService {
     rpc SearchAllProducts(Empty) returns (ProductsResponse) {}
     rpc SearchProductByID(Payload) returns (ProductResponse) {}
 }
->>>>>>> 6709bf917affa50cf2c13c94a6821dc98560cc51
